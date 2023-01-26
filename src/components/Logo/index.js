@@ -8,7 +8,7 @@ function Logo() {
       <img src={logo} alt="Logo" className="logo-img" />
       <p>
         <strong>Alura</strong>
-        <strong>Books</strong>
+        Books
       </p>
     </div>
   );
