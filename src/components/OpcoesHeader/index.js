@@ -1,17 +1,32 @@
 import React from 'react';
-import './style.css';
+import styled from 'styled-components';
 
 function Opcoes() {
+  const Opcoes = styled.ul`
+    display: flex;
+  `;
+  const Opcao = styled.li`
+    font-size: 16px;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 0 5px;
+    cursor: pointer;
+    min-width: 120px;
+  `;
   const textoOpcoes = ['Categorias', 'Minha Estante', 'Favoritos'];
 
   return (
-    <ul className="opcoes">
+    <Opcoes>
       {textoOpcoes.map((text) => (
-        <li className="opcao">
+        <Opcao>
           <p>{text}</p>
-        </li>
+        </Opcao>
       ))}
-    </ul>
+    </Opcoes>
   );
 }
 
