@@ -22,9 +22,7 @@ function Opcoes() {
   return (
     <Opcoes>
       {textoOpcoes.map((text) => (
-        <Opcao>
-          <p>{text}</p>
-        </Opcao>
+        <Opcao>{text}</Opcao>
       ))}
     </Opcoes>
   );

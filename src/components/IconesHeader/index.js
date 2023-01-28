@@ -7,10 +7,12 @@ function Icones() {
     display: flex;
     align-items: center;
   `;
+
   const Icone = styled.li`
     margin-right: 40px;
     width: 25px;
   `;
+
   const Icon = styled.img`
     cursor: pointer;
   `;

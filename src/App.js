@@ -7,9 +7,6 @@ const AppConteiner = styled.div`
   height: 100vh;
   background-image: linear-gradient(90deg, #002f52 35%, #326589);
   font-family: Arial, Helvetica, sans-serif;
-  li {
-    list-style: none;
-  }
 `;
 
 function App() {
