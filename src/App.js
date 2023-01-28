@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
+import Pesquisa from './components/Pesquisa/index.js';
 import styled from 'styled-components';
 
 const AppConteiner = styled.div`
@@ -13,6 +14,7 @@ function App() {
   return (
     <AppConteiner>
       <Header />
+      <Pesquisa />
     </AppConteiner>
   );
 }
