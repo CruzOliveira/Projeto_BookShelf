@@ -5,8 +5,8 @@ import Lancamentos from './components/Lancamentos/index.js';
 import styled from 'styled-components';
 
 const AppConteiner = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-image: linear-gradient(90deg, #002f52 35%, #326589 165%);
 `;
 
