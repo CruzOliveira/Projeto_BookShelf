@@ -38,7 +38,9 @@ const Seletor = styled.div`
 function Lancamentos() {
   return (
     <LancamentoConteiner>
-      <Titulo cor={'#000'}>ÚLTIMOS LANÇAMENTOS</Titulo>
+      <Titulo cor={'#EB9B00'} tamanhoFonte={'36px'}>
+        ÚLTIMOS LANÇAMENTOS
+      </Titulo>
       <NovosLivrosConteiner>
         <Seletor>
           {livros.map((livro) => (

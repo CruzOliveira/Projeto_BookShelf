@@ -11,15 +11,27 @@ import Outsider from '../../img/Outsider.png';
 import OPaciente from '../../img/OPaciente.png';
 
 export const livros = [
-  { nome: 'Harry Potter e a Pedra Filosofal', src: HarryPotter, id: 1 },
-  { nome: 'O Pequeno Principe', src: PequenoPrincipe, id: 2 },
-  { nome: 'O Ladrão de Raios', src: PercyJackson, id: 3 },
-  { nome: 'A Arte da Guerra', src: ArteGuerra, id: 4 },
-  { nome: 'A Arte da Guerra', src: Metamorfose, id: 5 },
-  { nome: 'Pele', src: Pele, id: 5 },
-  { nome: 'Messi', src: Messi, id: 6 },
-  { nome: 'O Príncipe de Maquiavel', src: OPrincipe, id: 7 },
-  { nome: 'It a Coisa', src: It, id: 8 },
-  { nome: 'Outsider', src: Outsider, id: 9 },
-  { nome: 'O paciente', src: OPaciente, id: 10 },
+  {
+    nome: 'Harry Potter e a Pedra Filosofal',
+    src: HarryPotter,
+    id: 'harry potter e a pedra filosofal',
+  },
+  {
+    nome: 'O Pequeno Principe',
+    src: PequenoPrincipe,
+    id: 'o pequeno principe',
+  },
+  { nome: 'O Ladrão de Raios', src: PercyJackson, id: 'o ladrão de raios' },
+  { nome: 'A Arte da Guerra', src: ArteGuerra, id: 'a arte da guerra' },
+  { nome: 'A Metamorfose', src: Metamorfose, id: 'a metamorfose' },
+  { nome: 'Pele', src: Pele, id: 'pele' },
+  { nome: 'Messi', src: Messi, id: 'messi' },
+  {
+    nome: 'O Príncipe de Maquiavel',
+    src: OPrincipe,
+    id: 'o príncipe de maquiavel',
+  },
+  { nome: 'It a Coisa', src: It, id: 'it a coisa' },
+  { nome: 'Outsider', src: Outsider, id: 'outsider' },
+  { nome: 'O paciente', src: OPaciente, id: 'o paciente' },
 ];
