@@ -1,8 +1,9 @@
-import livro from '../../img/livro.png';
+import HarryPotter from '../../img/HarryPotter.png';
+import PequenoPrincipe from '../../img/PequenoPrincipe.png';
+import PercyJackson from '../../img/PercyJackson.png';
 
 export const livros = [
-  { nome: 'Liberanca em Design', id: 1, src: livro },
-  { nome: 'JavaScript Assertico', id: 2, src: livro },
-  { nome: 'Cangaceiro em JavaScript', id: 3, src: livro },
-  { nome: 'Aventureiros do Java', id: 4, src: livro },
+  { nome: 'Harry Potter e a Pedra Filosofal', id: 1, src: HarryPotter },
+  { nome: 'O Pequeno Principe', id: 2, src: PequenoPrincipe },
+  { nome: 'O Ladrão de Raios', id: 3, src: PercyJackson },
 ];
