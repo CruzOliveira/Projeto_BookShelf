@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Pesquisa from './components/Pesquisa/index.js';
+import Lancamentos from './components/Lancamentos/index.js';
 import styled from 'styled-components';
 
 const AppConteiner = styled.div`
@@ -14,6 +15,7 @@ function App() {
     <AppConteiner>
       <Header />
       <Pesquisa />
+      <Lancamentos />
     </AppConteiner>
   );
 }

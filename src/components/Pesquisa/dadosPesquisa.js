@@ -3,7 +3,7 @@ import PequenoPrincipe from '../../img/PequenoPrincipe.png';
 import PercyJackson from '../../img/PercyJackson.png';
 
 export const livros = [
-  { nome: 'Harry Potter e a Pedra Filosofal', id: 1, src: HarryPotter },
-  { nome: 'O Pequeno Principe', id: 2, src: PequenoPrincipe },
-  { nome: 'O Ladrão de Raios', id: 3, src: PercyJackson },
+  { nome: 'Harry Potter e a Pedra Filosofal', src: HarryPotter, id: 1 },
+  { nome: 'O Pequeno Principe', src: PequenoPrincipe, id: 2 },
+  { nome: 'O Ladrão de Raios', src: PercyJackson, id: 3 },
 ];
