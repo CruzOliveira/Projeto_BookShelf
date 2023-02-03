@@ -1,3 +1,4 @@
+
 import React from "react";
 import styled from "styled-components";
 import { livros } from "../Pesquisa/dadosPesquisa";
@@ -9,6 +10,20 @@ const LancamentoConteiner = styled.section`
     background-color: #ebecee;
     overflow-x: hidden;
     height: 50vh;
+
+import React from 'react';
+import styled from 'styled-components';
+import { livros } from '../Pesquisa/dadosPesquisa';
+import { Titulo } from '../Titulo/index.js';
+import Card from '../Card/index.js';
+import Naldo from '../../img/Naldo.png';
+
+const LancamentoConteiner = styled.section`
+  display: flex;
+  flex-direction: column;
+  background-color: #ebecee;
+  overflow-x: hidden;
+  height: 100vh;
 `;
 
 const NovosLivrosConteiner = styled.div`
@@ -36,6 +51,7 @@ const Seletor = styled.div`
 `;
 
 function Lancamentos() {
+
     return (
         <LancamentoConteiner>
             <Titulo cor={"#EB9B00"} tamanhoFonte={"36px"}>
@@ -50,6 +66,28 @@ function Lancamentos() {
             </NovosLivrosConteiner>
         </LancamentoConteiner>
     );
+  
+  return (
+    <LancamentoConteiner>
+      <Titulo cor={'#EB9B00'} tamanhoFonte={'36px'}>
+        ÚLTIMOS LANÇAMENTOS
+      </Titulo>
+      <NovosLivrosConteiner>
+        <Seletor>
+          {livros.map((livro) => (
+            <img src={livro.src} />
+          ))}
+        </Seletor>
+      </NovosLivrosConteiner>
+      <Card
+        titulo="Talvez você se interesse por"
+        subtitulo="Naldo Benny - Cada vez eu quero mais"
+        descricao="Aos sete anos de idade, Ronaldo Jorge Silva, Naldo, já mostrava que tinha dom para a música nas apresentações que fazia em uma igreja perto de sua casa, levado pela mãe. Em 1996, ao lado do irmão Lula, passou a cantar em alguns barese eventos. Gravaram o primeiro álbum pela EMI Music (atual Universal Music) em 1999, que acabou não sendo lançado por problemas internos da gravadora. Apenas em 2001 conseguiram lançar seu primeiro single promocional ? Chinelada."
+        img={Naldo}
+      />
+    </LancamentoConteiner>
+  );
+
 }
 
 export default Lancamentos;
