@@ -10,7 +10,7 @@ const LancamentoConteiner = styled.section`
   flex-direction: column;
   background-color: #ebecee;
   overflow-x: hidden;
-  height: 50vh;
+  height: 100vh;
 `;
 const NovosLivrosConteiner = styled.div`
   margin-top: 30px;
@@ -49,21 +49,7 @@ function Lancamentos() {
           ))}
         </Seletor>
       </NovosLivrosConteiner>
-    </LancamentoConteiner>
-  );
 
-  return (
-    <LancamentoConteiner>
-      <Titulo cor={'#EB9B00'} tamanhoFonte={'36px'}>
-        ÚLTIMOS LANÇAMENTOS
-      </Titulo>
-      <NovosLivrosConteiner>
-        <Seletor>
-          {livros.map((livro) => (
-            <img src={livro.src} />
-          ))}
-        </Seletor>
-      </NovosLivrosConteiner>
       <Card
         titulo="Talvez você se interesse por"
         subtitulo="Naldo Benny - Cada vez eu quero mais"
