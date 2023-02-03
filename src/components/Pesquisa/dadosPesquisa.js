@@ -23,4 +23,5 @@ export const livros = [
   { nome: 'It a Coisa', src: It, id: 9 },
   { nome: 'Outsider', src: Outsider, id: 10 },
   { nome: 'O paciente', src: OPaciente, id: 11 },
+  { nome: 'Naldo', src: Naldo, id: 12 },
 ];
