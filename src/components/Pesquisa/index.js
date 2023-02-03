@@ -7,6 +7,9 @@ const PesquisaContainer = styled.section`
   background-image: linear-gradient(90deg, #002f52 35%, #326589 165%);
   color: #fff;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 70px 0;
   width: 100%;
 `;
@@ -23,6 +26,14 @@ const Subtitulo = styled.h3`
   font-weight: 500;
   margin-bottom: 40px;
 `;
+const ResultadoConteiner = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 110vh;
+  align-items: center;
+  width: 60vw;
+`;
 
 const Resultado = styled.div`
   display: flex;
@@ -31,6 +42,7 @@ const Resultado = styled.div`
   margin-top: 20px;
   margin-bottom: 20px;
   cursor: pointer;
+  width: 248.4px;
 
   p {
     width: 200px;
@@ -58,17 +70,28 @@ function Pesquisa() {
         onBlur={(evento) => {
           const textoDigitado = evento.target.value;
           const resultadoPesquisa = livros.filter((livro) =>
-            livro.id.includes(textoDigitado),
+            livro.nome
+              .toLowerCase()
+              .normalize('NFD')
+              .replace(/[\u0300-\u036f]/g, '')
+              .includes(
+                textoDigitado
+                  .toLowerCase()
+                  .normalize('NFD')
+                  .replace(/[\u0300-\u036f]/g, ''),
+              ),
           );
           setLivrosPesquisados(resultadoPesquisa);
         }}
       />
-      {livrosPesquisados.map((livro) => (
-        <Resultado>
-          <img src={livro.src} />
-          <p>{livro.nome}</p>
-        </Resultado>
-      ))}
+      <ResultadoConteiner>
+        {livrosPesquisados.map((livro) => (
+          <Resultado>
+            <img src={livro.src} />
+            <p>{livro.nome}</p>
+          </Resultado>
+        ))}
+      </ResultadoConteiner>
     </PesquisaContainer>
   );
 }
