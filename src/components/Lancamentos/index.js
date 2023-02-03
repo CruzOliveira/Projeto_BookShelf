@@ -10,9 +10,8 @@ const LancamentoConteiner = styled.section`
   flex-direction: column;
   background-color: #ebecee;
   overflow-x: hidden;
-  height: 100vh;
+  height: 50vh;
 `;
-
 const NovosLivrosConteiner = styled.div`
   margin-top: 30px;
   display: flex;
@@ -38,6 +37,21 @@ const Seletor = styled.div`
 `;
 
 function Lancamentos() {
+  return (
+    <LancamentoConteiner>
+      <Titulo cor={'#EB9B00'} tamanhoFonte={'36px'}>
+        ÚLTIMOS LANÇAMENTOS
+      </Titulo>
+      <NovosLivrosConteiner>
+        <Seletor>
+          {livros.map((livro) => (
+            <img src={livro.src} />
+          ))}
+        </Seletor>
+      </NovosLivrosConteiner>
+    </LancamentoConteiner>
+  );
+
   return (
     <LancamentoConteiner>
       <Titulo cor={'#EB9B00'} tamanhoFonte={'36px'}>
