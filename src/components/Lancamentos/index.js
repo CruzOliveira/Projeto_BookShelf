@@ -4,6 +4,7 @@ import { livros } from '../Pesquisa/dadosPesquisa';
 import { Titulo } from '../Titulo/index.js';
 import Card from '../Card/index.js';
 import Naldo from '../../img/Naldo.png';
+import InfiniteScroll from 'react-infinite-scroll-component';
 
 const LancamentoConteiner = styled.section`
   display: flex;
