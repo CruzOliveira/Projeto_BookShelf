@@ -9,6 +9,7 @@ import OPrincipe from '../../img/OPrincipe.png';
 import It from '../../img/It.png';
 import Outsider from '../../img/Outsider.png';
 import OPaciente from '../../img/OPaciente.png';
+import Naldo from '../../img/Naldo.png';
 
 export const livros = [
   { nome: 'Harry Potter e a Pedra Filosofal', src: HarryPotter, id: 1 },
