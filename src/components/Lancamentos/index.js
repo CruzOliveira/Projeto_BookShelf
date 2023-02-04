@@ -21,9 +21,10 @@ const NovosLivrosConteiner = styled.div`
     justify-content: center;
 `;
 const Seletor = styled.div`
-    display: flex;
-    justify-content: center;
+    display: inline-block;
+    position: relative;
     width: 80vw;
+    height: 326px;
     overflow-x: hidden;
 
     img {
@@ -47,13 +48,13 @@ function Lancamentos() {
             <NovosLivrosConteiner>
                 <Seletor>
                     <m.div
-                        initial={{ x: "200%" }}
-                        animate={{ x: (livros.length - 2) * -210 }}
+                        initial={{ x: "60%" }}
+                        animate={{ x: "-100%" }}
                         transition={{
                             x: {
                                 repeat: Infinity,
                                 repeatType: "loop",
-                                repeatDelay: 5,
+                                repeatDelay: 3.8,
                                 duration: 15,
                                 ease: "linear",
                             },
@@ -65,17 +66,17 @@ function Lancamentos() {
                         ))}
                     </m.div>
                     <m.div
-                        initial={{ x: "200%" }}
-                        animate={{ x: (livros.length - 2) * -210 }}
+                        initial={{ x: "60%" }}
+                        animate={{ x: "-100%" }}
                         transition={{
                             x: {
                                 repeat: Infinity,
                                 repeatType: "loop",
-                                repeatDelay: 10,
-                                duration: 17,
+                                repeatDelay: 3.8,
+                                duration: 15,
                                 ease: "linear",
                             },
-                            delay: 10,
+                            delay: 9.4,
                         }}
                         className="inf-scroll"
                     >
